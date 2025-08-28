@@ -3,7 +3,7 @@ public class Constructor {
      String name;
 
      Constructor() {
-        
+
      }
 
     //  Constructor() {
@@ -16,7 +16,7 @@ public class Constructor {
      }
 
      public static void main(String[] args) {
-         Constructor c= new Constructor();
-         c.printInfo();
+         Constructor c1= new Constructor();
+         c1.printInfo();
      }
 }

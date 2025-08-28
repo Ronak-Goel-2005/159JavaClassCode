@@ -17,17 +17,17 @@ class Faculty extends Employee {
     }
 }
 
-class Staff extends Faculty {
+class ResearchFaculty extends Faculty {
     String shift;
 
-    void StaffDetails() {
+    void ResearchFacultyDetails() {
         System.out.println("Details are: " + shift);
     }
 }
 
-public class Inheritance_Heirarical {
+public class Inheritance_Multilevel {
     public static void main(String[] args) {
-        Staff x = new Staff();
+        ResearchFaculty x = new ResearchFaculty();
         x.id = 101;
         x.name = "Ronak";
         x.org = "KIET";
@@ -37,6 +37,6 @@ public class Inheritance_Heirarical {
 
         x.EmployeeDetails();
         x.FacultyDetails();
-        x.StaffDetails();
+        x.ResearchFacultyDetails();
     }
 }
