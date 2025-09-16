@@ -1,18 +1,20 @@
 import java.util.*;
 
-public class ArrayListFunctions {
+public class LinkedListFunctions {
     public static void main(String[] args) {
-        ArrayList<String> list = new java.util.ArrayList<>();
+        LinkedList<String> list = new java.util.LinkedList<>();
         list.add("Apple");
         list.add("Banana");
         list.add("Cherry");
+        list.addFirst("Mango");
+        list.addLast("Orange");
         System.out.println("Original List: " + list);
 
-        // Size of the ArrayList
+        // Size of the LinkedList
         int size = list.size();
         System.out.println("Size: " + size);
         
-        // Different ways to print an ArrayList
+        // Different ways to print a LinkedList
         System.out.println(list);
 
         for(String item : list) {
@@ -29,6 +31,10 @@ public class ArrayListFunctions {
         // Get element at a specific index
         String element = list.get(1);
         System.out.println("Element at index 1: " + element);
+        String firstElement = list.getFirst();
+        System.out.println("First Element: " + firstElement);
+        String lastElement = list.getLast();
+        System.out.println("Last Element: " + lastElement);
 
         // Update element at a specific index
         list.set(1, "Blueberry");
